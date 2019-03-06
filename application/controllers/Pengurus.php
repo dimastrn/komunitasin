@@ -5,13 +5,13 @@ class Pengurus extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Pengurus_model');
+        $this->load->model('Pengurus_model');        
     }
 
     public function index()
     {
         $data['komunitas'] = $this->Pengurus_model->read();
-        $this->load->view('pengurus', $data);
+        $this->template->display_template('pages/pengurus', $data);
     }
 
     public function tambah()
@@ -31,7 +31,7 @@ class Pengurus extends CI_Controller {
     {
         $id = $this->uri->segment(3);
         $data['edit'] = $this->Pengurus_model->get_by_id($id);
-        $this->load->view('edit', $data);
+        $this->load->view('pages/inc/pengurus/edit', $data);
     }
 
     public function update()

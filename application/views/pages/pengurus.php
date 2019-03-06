@@ -1,5 +1,3 @@
-<?php get_template('header'); ?>
-
 <div class="wrapper">
     <div class="fresh-table toolbar-color-azure full-screen-table">
     <!--    Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange                  
@@ -20,7 +18,7 @@
             	<th data-field="gender">Gender</th>
             	<th data-field="actions">Actions</th>
             </thead>
-           <!--  <tbody>       
+            <tbody>       
                 <?php 
                     $no = 1;
                     foreach($komunitas as $data): 
@@ -42,7 +40,7 @@
                         </td>
                     </tr> 
                 <?php endforeach; ?>              
-            </tbody> -->
+            </tbody>
         </table>
     </div>
     
@@ -99,5 +97,3 @@
     </div>
 
 </div>
-
-<?php get_template('footer'); ?>

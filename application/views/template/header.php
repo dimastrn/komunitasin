@@ -15,8 +15,8 @@
 
 <div class="wrapper-menu">
   <br>
-    <h2>Komunitas MEME Indonesia</h2>
-    <h6>Me Create Me Laugh</h6>
+    <h2>Komunitas Programmer Indonesia</h2>
+    <h6>Always Learning, Always Envolving</h6>
     <nav class="tabs">
       <div class="selector"></div>
       <a href="<?php echo site_url('pengurus') ?>" class="<?php echo is_active_page_print('pengurus', 'active'); ?>"><!-- <i class="fas fa-burn"> --></i>Pengurus</a>

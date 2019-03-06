@@ -2,18 +2,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pengurus_model extends CI_Model {
+class Admin_model extends CI_Model {
 
 
     public function create($data)
     {
-        $this->db->insert('tb_komunitas', $data);
+        $this->db->insert('tb_admin', $data);
     }
     
     public function read()
     {
         $this->db->select('*');
-        $this->db->from('tb_komunitas');
+        $this->db->from('tb_admin');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -21,22 +21,22 @@ class Pengurus_model extends CI_Model {
     public function get_by_id($id)
     {
         $this->db->select('*');
-        $this->db->from('tb_komunitas');
-        $this->db->where('id_komunitas', $id);
+        $this->db->from('tb_admin');
+        $this->db->where('id_admin', $id);
         $query = $this->db->get();
         return $query->result();
     } 
 
     public function update($id, $data)
     {        
-        $this->db->where('id_komunitas', $id);
-        $this->db->update('tb_komunitas', $data);
+        $this->db->where('id_admin', $id);
+        $this->db->update('tb_admin', $data);
     }
 
     public function delete($id) 
     {
-        $this->db->where('id_komunitas', $id);        
-        $this->db->delete('tb_komunitas');
+        $this->db->where('id_admin', $id);        
+        $this->db->delete('tb_admin');
     }
 
 }
