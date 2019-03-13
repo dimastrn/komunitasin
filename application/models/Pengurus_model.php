@@ -39,6 +39,9 @@ class Pengurus_model extends CI_Model {
         $this->db->delete('tb_komunitas');
     }
 
+   
+
+
 }
 
 ?>

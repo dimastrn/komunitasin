@@ -11,6 +11,7 @@ class Admin extends CI_Controller
 		parent::__construct();
 		$this->load->model('Admin_model');
         $this->load->helper('site_helper');
+        $this->mainlib->logged_in();    
 	}
 
 	public function index()
@@ -55,6 +56,7 @@ class Admin extends CI_Controller
         redirect('admin');
     }
 
+  
 
 }
 

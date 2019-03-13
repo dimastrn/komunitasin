@@ -6,6 +6,7 @@ class Pengurus extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('Pengurus_model');        
+        $this->mainlib->logged_in();    
     }
 
     public function index()
